@@ -8,6 +8,9 @@ Set up basic [RBAC rules][rbac-rules] for etcd operator:
 $ example/rbac/create_role.sh
 ```
 
+Note, that the script defaults to the **default** namespace. For non-default namespaces you will need to explicitly specify your namespace using the `--namespace=` argument.
+
+
 ## Install etcd operator
 
 Create a deployment for etcd operator:
